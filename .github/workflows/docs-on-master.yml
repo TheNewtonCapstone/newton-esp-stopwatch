@@ -17,5 +17,13 @@ jobs:
     steps:
     - name: Doxygen install
       run: sudo apt-get install -y doxygen
-    - name: deployment
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Generate Doxygen
+      run: cd docs && doxygen Doxyfile
+    - name: Generate Sphinx rst files
+      run: cd docs && python generate_rst.py
+    - name: Deployment
       uses: sphinx-notes/pages@v3
+      with:
+        checkout: false
