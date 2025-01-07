@@ -6,7 +6,7 @@ template = """
 {header_separator}
 
 .. doxygenfile:: {filepath}
-   :project: newton_esp_stopwatch
+   :project: newton-esp-stopwatch
 """
 
 def ensure_dir(file_path):

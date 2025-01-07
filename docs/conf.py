@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'newton_esp_stopwatch'
+project = 'newton-esp-stopwatch'
 copyright = '2025, TheNewtonCapstone'
 author = 'TheNewtonCapstone'
 
@@ -23,8 +23,8 @@ extensions = [
     'breathe'
 ]
 
-breathe_projects = { "newton_esp_stopwatch": "doxygen/xml" }
-breathe_default_project = "newton_esp_stopwatch"
+breathe_projects = { "newton-esp-stopwatch": "doxygen/xml" }
+breathe_default_project = "newton-esp-stopwatch"
 
 
 import subprocess

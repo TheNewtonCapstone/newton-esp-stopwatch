@@ -1,4 +1,4 @@
-PROJECT_NAME           = "newton_esp_stopwatch"
+PROJECT_NAME           = "newton-esp-stopwatch"
 OUTPUT_DIRECTORY       = doxygen
 GENERATE_XML          = YES
 XML_OUTPUT            = xml
