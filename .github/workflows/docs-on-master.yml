@@ -22,7 +22,7 @@ jobs:
     - name: Generate Doxygen
       run: cd docs && doxygen Doxyfile
     - name: Generate Sphinx rst files
-      run: cd docs && python generate_rst.py
+      run: cd docs && mkdir api && python generate_rst.py
     - name: Deployment
       uses: sphinx-notes/pages@v3
       with:
