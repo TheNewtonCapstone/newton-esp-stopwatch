@@ -9,6 +9,11 @@ template = """
    :project: newton_esp_stopwatch
 """
 
+def ensure_dir(file_path):
+    directory = os.path.dirname(file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
 def generate_pages():
     headers = glob.glob("../include/**/*.[h|hpp]", recursive=True)
     
@@ -26,4 +31,5 @@ def generate_pages():
             ))
 
 if __name__ == "__main__":
+    ensure_dir("api/")
     generate_pages()

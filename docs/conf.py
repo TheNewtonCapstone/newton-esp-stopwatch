@@ -33,4 +33,4 @@ import subprocess
 subprocess.call('doxygen Doxyfile', shell=True)
 
 # Generate Sphinx pages
-subprocess.call('python generate.py', shell=True)
+subprocess.call('python generate_rst.py', shell=True)
